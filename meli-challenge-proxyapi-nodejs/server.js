@@ -1,11 +1,20 @@
 const express = require('express');
 const cors = require('cors');
-
-const { response, request } = require("express");
+const expressRateLimit = require('express-rate-limit');
 
 class Server {
     constructor(){
         this.app = express();
+
+        this.limiter = expressRateLimit({
+            windowMs: 15 * 60 * 1000, // 15 minutes
+	        max: 100, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
+	        standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
+	        legacyHeaders: false, // Disable the `X-RateLimit-*` headers
+            message: {
+                message: "TOO_MANY_REQUESTS"
+            }
+        })
         
         this.middleWares();
 
@@ -18,11 +27,14 @@ class Server {
         this.app.use(express.urlencoded({ 
             extended: true 
         }));
-
-        this.app.use('/api', require('./routes'))
     }
 
     routes(){
+        this.app.use('/api', [
+            this.limiter,
+            require('./routes')
+        ])
+
         this.app.get("/", (pRequest, pResponse) => {
             pResponse.status(200).send(
                 "Mercado Libre Challenge API by Igna"
