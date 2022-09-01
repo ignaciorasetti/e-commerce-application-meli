@@ -54,6 +54,7 @@ Gets items from a specific query parameter.
 ## Dependencies
 * [Express](http://expressjs.com/): Web framework to handle API routes. 
 * [Cors](https://www.npmjs.com/package/cors): Middleware to handle CORS for Express.
+* [Express Rate Limit](https://www.npmjs.com/package/express-rate-limit): Middleware to handle rate limit requests.
 * [Axios](https://axios-http.com/): To perform Http requests to the MercadoLibre API.
 * [Nodemon](https://www.npmjs.com/package/nodemon): Tool to help developing, hot-reloading the project. 
 
