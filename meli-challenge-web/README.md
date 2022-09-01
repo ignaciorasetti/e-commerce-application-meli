@@ -27,7 +27,7 @@ This was a project made on [React](https://reactjs.org/) for the propose of cons
 
 * SEO implementation through a custom hook. 
 * Responsive design.
-* Type safety using TypeScript
+* Type safety using TypeScript.
 * Components aproach for maximaze re-usability.
 
 ## Installation
@@ -62,10 +62,10 @@ Reasons behind uses of some dependencies:
             </tr>
              <tr>
                 <td style="width:50%">
-                    <img src="./screenshots/firefox_V0z3bTzYUr.png" alt="Doppler"><br/>
+                    <img src="./screenshots/firefox_fcdhBsajaD.png" alt="Doppler"><br/>
                 </td>
                 <td style="width:100%">
-                    <img src="./screenshots/firefox_puH6jEgqG3.png" width="" alt="Doppler"><br/>
+                    <img src="./screenshots/firefox_ZYyWtTFjO7.png" width="" alt="Doppler"><br/>
                 </td>
             </tr>
         </tbody>
