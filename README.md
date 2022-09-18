@@ -9,7 +9,7 @@ This project had a propose to learn how the MercadoLibre API works and create a 
 This project is divided into various applications.
 
 ### Proxy API
-To obtain data from the MercadoLibre API and create custom answers.
+To obtain data from the MercadoLibre API and create custom responses.
 * [meli-challenge-proxyapi-golang](./meli-challenge-proxyapi-golang/)
 * [meli-challenge-proxyapi-nodejs](./meli-challenge-proxyapi-nodejs/)
 
