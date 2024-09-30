@@ -1,4 +1,5 @@
-# MercadoLibre Challenge
+# e-commerce-application-meli
+Public
 
 ## Introduction
 This project had a propose to learn how the MercadoLibre API works and create a few applications based on it.
